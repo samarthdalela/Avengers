@@ -1,0 +1,470 @@
+
+body {
+    background-color: black;
+    
+}
+html{            
+    scroll-behavior: smooth;
+}
+.container {
+    background-image: url("./images/4k-avengers-infinity-war-thanos-u1r3bdi5u0yxzfns.webp");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    color: antiquewhite;
+
+
+}
+
+.container_background {
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 100%;
+    height: 95vh;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_items {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+}
+
+li:hover {
+    color: #fff076;
+    scale: 1.10;
+    box-shadow: 3px 2px rgba(248, 7, 7, 0.365);
+    background-color: rgba(248, 7, 7, 0.365);
+
+}
+a:hover{
+    color: #fff076;
+}
+
+.logo {
+    animation-name: spin;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        border-radius: 100px;
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: rgba(248, 7, 7, 0.365);
+        border-radius: 100px;
+    }
+}
+
+.main {
+    display: flex;
+
+    width: 100%;
+    height: 90vh;
+}
+
+.main_content {
+    display: flex;
+    width: 100%;
+
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: large
+}
+
+button {
+    background-color: rgba(248, 7, 7, 0.689);
+    border-radius: 5px;
+    font-size: large;
+    color: antiquewhite;
+    font-weight: 100;
+    padding: 3px 10px;
+
+}
+a{text-decoration: none;
+color: white;
+}
+button:hover {
+    scale: 1.10;
+    box-shadow: 2px 2px rgba(40, 7, 7, 0.717);
+    font-weight: bolder;
+    color: #fff076;
+    border: none;
+}
+
+#About {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: aliceblue;
+
+
+
+}
+
+.about_con {
+    /* border: solid #fff076; */
+    display:grid ;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+
+
+}
+
+.about1 {
+    grid-column: 1/3;
+    height: 20vh;
+   
+   
+
+}
+.about2{
+background-color: #39255d37;
+height: 41vh;
+}
+.about3 {
+    height: 41vh;
+   
+   align-content: center;
+    text-align: center;
+    background-color: #39255d37;
+}
+.heading{
+    font-size: xx-large;
+    color: rgba(255, 0, 0, 0.678);
+
+}
+
+.about1:hover{
+    animation-name: image;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    .heading{
+        color: aliceblue;
+        background-color:  rgba(255, 0, 0, 0.678);
+        width: 100vw;
+        height: 8vh;
+        line-height: 7vh;
+
+        text-align: center;
+    }
+  
+}
+@keyframes image {
+    0%{
+        background-image: url(./images/New_Marvel_DP_Banner1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+    }
+    50%{
+        background-image: url(./images/New_Marvel_DP_Banner2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover; 
+    }
+    75%{
+        background-image: url(./images/2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    }
+    100%{
+        background-image: url(./images/aa1b1cbb47201a659b0258735e5d27e2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+   
+
+    }
+    
+}
+
+.team_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-content: center;
+    justify-items: center;
+}
+.team{
+    color: aliceblue;
+    
+}
+.team1{
+    grid-column: 1/4;
+    width: 100%;
+    height: 18vh;
+
+    text-align: center;
+}
+.team2 ,.team3,.team4 {
+    width: 100%;
+ 
+}
+.hero{
+    width: 50vh;
+    height: 50vh;
+}
+
+.team1:hover{
+    animation-name: image2;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    .heading{
+        color: aliceblue;
+        background-color:  rgba(255, 0, 0, 0.678);
+
+        height: 8vh;
+        line-height: 7vh;
+       
+    }
+  
+}
+@keyframes image2 {
+    0%{
+        background-image: url(./images/avg1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+    }
+
+    50%{
+        background-image: url(./images/avengers-age-of-ultron-team-i24291.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    }
+    100%{
+        background-image: url(./images/avg2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+   
+
+    }
+    
+}
+
+
+
+.contact_container{
+    color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 8vh 20vh; */
+    margin-bottom: 20vh;
+}
+.contact1{
+    grid-column: 1/3;
+    text-align: center;
+    height: 18vh;
+}
+.contact2{
+  
+}
+#img2{
+    width: 100%;
+    height: 100%;
+}
+.contact3{
+  align-self: center;
+  justify-content: space-evenly;
+}
+input{
+    margin: 5px;
+    width: 90%;
+    border-radius: 5px;
+    height: 5vh;
+    background-color:#39255d37;
+    color: antiquewhite;
+    border: solid 1px rgb(50, 50, 50);
+}
+textarea{
+    margin: 5px;
+    width:90%;
+    background-color: #39255d37;
+    color: antiquewhite;
+    border: solid 1px rgb(50, 50, 50);
+}
+#form_button{
+    width: 90%;
+    margin-left: 6px;
+}
+
+.contact1:hover{
+    animation-name: image3;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    .heading{
+        color: aliceblue;
+        background-color:  rgba(255, 0, 0, 0.678);
+        height: 8vh;
+        line-height: 7vh;
+
+       
+    }
+  
+}
+@keyframes image3 {
+    0%{
+        background-image: url(./images/av1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+    }
+
+    50%{
+        background-image: url(./images/av2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    }
+    100%{
+        background-image: url(./images/av3.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+   
+
+    }
+    
+}
+
+.footer_container{
+    display: flex;
+    color: antiquewhite;
+    background-color: rgb(15, 14, 14);
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
+.footer{
+    width: 20vw;
+    text-align: center;
+}
+
+.gallery_container{
+    display: grid;
+    width: 100%;
+    
+    grid-template-columns:repeat(3, 1fr) ;
+    
+}
+.galleryBox{
+   
+    color: aliceblue;
+    overflow: hidden;
+    position: relative
+
+}
+.Gallery1{
+    grid-column: 1/4;
+    height: 18vh;
+    text-align: center;
+    
+}
+.Gallery3{
+    color: antiquewhite;
+    font-weight: 900;
+  
+}
+
+.galleryBox img{
+    width: 100%;
+    height: 100%;
+    transition-duration: 2s;
+    
+}
+
+.galleryBox:hover img{
+    transform: translateY(-100%);
+    
+
+}
+
+/* .galleryBox{
+    display: flex;
+    justify-content: center;
+} */
+.galleryBox .inner_content {
+    position: absolute;
+    top: 0;
+    margin-left: 2vw;
+    width: 90%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); 
+    color: white;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none; /* Avoid interaction when hidden */
+}
+
+.galleryBox:hover .inner_content {
+    opacity: 1;
+    pointer-events: auto; /* Allow interaction on hover */
+}
+
+.Gallery1:hover{
+    animation-name: image4;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    .heading{
+        color: aliceblue;
+        background-color:  rgba(255, 0, 0, 0.678);
+        height: 8vh;
+        line-height: 7vh;
+
+       
+    }
+  
+}
+@keyframes image4 {
+    0%{
+        background-image: url(./images/av0.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+    }
+    25%{
+        background-image: url(./images/av1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+    }
+    50%{
+        background-image: url(./images/av0.0.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    }
+    75%{
+        background-image: url(./images/av2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    }
+    100%{
+        background-image: url(./images/av3.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+   
+
+    }
+    
+}
